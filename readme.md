@@ -1,4 +1,4 @@
-## Sample App With NGIX, MYSQL AND PHP
+## Sample App With NGIX, MYSQL and PHP
 
 ### Versions
 
