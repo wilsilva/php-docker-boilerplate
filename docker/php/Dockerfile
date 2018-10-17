@@ -4,12 +4,13 @@ MAINTAINER "William Silva" <williamsilva808@hotmail.com>
 
 # Install PHP extensions
 RUN apt-get update && apt-get install -y \
+      zlib1g-dev \
       libicu-dev \
       libpq-dev \
       libmcrypt-dev \
-    && rm -r /var/lib/apt/lists/* \
-    && docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd \
-    && docker-php-ext-install \
+      && rm -r /var/lib/apt/lists/* \
+      && docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd \
+      && docker-php-ext-install \
       intl \
       mbstring \
       mcrypt \
